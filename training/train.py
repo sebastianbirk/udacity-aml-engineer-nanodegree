@@ -14,14 +14,22 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # Data is located at:
 # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
+<<<<<<< HEAD
 ds = TabularDatasetFactory.from_delimited_files("https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv")
+=======
+ds = ### YOUR CODE HERE ###
+>>>>>>> 129ad0c39dd85b4cfba62dc8bbfd2a457dae90f2
 
 x, y = clean_data(ds)
 
 # TODO: Split data into train and test sets.
 
+<<<<<<< HEAD
 ### YOUR CODE HERE ###
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+=======
+### YOUR CODE HERE ###a
+>>>>>>> 129ad0c39dd85b4cfba62dc8bbfd2a457dae90f2
 
 run = Run.get_context()
 
@@ -50,7 +58,11 @@ def clean_data(data):
     x_df["poutcome"] = x_df.poutcome.apply(lambda s: 1 if s == "success" else 0)
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 129ad0c39dd85b4cfba62dc8bbfd2a457dae90f2
 
 def main():
     # Add arguments to script
@@ -70,4 +82,8 @@ def main():
     run.log("Accuracy", np.float(accuracy))
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     main()
+=======
+    main()
+>>>>>>> 129ad0c39dd85b4cfba62dc8bbfd2a457dae90f2
