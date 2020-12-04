@@ -644,3 +644,4 @@ werkzeug==1.0.1
 zipp==3.4.0
 2020-12-04 17:58:13.607 - INFO - 6349 - azureml.automl.core.package_utilities._get_package_incompatibilities:468 - No package incompatibilities found.
 2020-12-04 17:58:13.608 - INFO - 6349 - azureml.automl.core.package_utilities._log_activity:92 - ActivityCompleted: Activity=PackagesCheck, HowEnded=Success, Duration=202.23[ms]
+2020-12-04 18:31:44.422 - INFO - 38262 - azureml.train.automl.automlconfig._start_execution:271 - Submitting remote.
