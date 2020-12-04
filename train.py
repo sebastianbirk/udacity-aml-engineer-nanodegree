@@ -1,6 +1,7 @@
 from sklearn.linear_model import LogisticRegression
 import argparse
 import os
+import joblib
 import numpy as np
 from sklearn.metrics import mean_squared_error
 import joblib
@@ -65,6 +66,10 @@ def main():
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
+    
+    os.makedirs('outputs', exist_ok=True)
+    # files saved in the "outputs" folder are automatically uploaded into run history
+    joblib.dump(model, 'outputs/model.pkl')
 
 if __name__ == '__main__':
     main()
