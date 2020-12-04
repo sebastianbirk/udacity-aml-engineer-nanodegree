@@ -72,7 +72,7 @@ def main():
     
     os.makedirs('outputs', exist_ok=True)
     # files saved in the "outputs" folder are automatically uploaded into run history
-    joblib.dump(model, 'outputs/model.pkl')
+    joblib.dump(model, 'outputs/hyperdrive_model.pkl')
 
 if __name__ == '__main__':
     main()
