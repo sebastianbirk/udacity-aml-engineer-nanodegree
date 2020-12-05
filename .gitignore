@@ -2,3 +2,5 @@ training
 outputs
 .ipynb_checkpoints
 data
+automl.log
+azureml_automl.log
