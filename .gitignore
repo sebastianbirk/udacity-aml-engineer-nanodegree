@@ -4,3 +4,4 @@ outputs
 data
 automl.log
 azureml_automl.log
+__pycache__
