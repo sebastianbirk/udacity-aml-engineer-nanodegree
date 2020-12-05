@@ -61,7 +61,3 @@ The hyperdrive run requires a custom implementation of a training entry script t
 Feature engineering can be used to create more powerful features than just the default columns provided by the dataset.
 A custom XGBoost classifier can be trained using hyperdrive to optimize the hyperparameters. Cross-validation should be used for training this classifier to not lose any data for training.
 <!-- #endregion -->
-
-```python
-
-```
