@@ -1,0 +1,5 @@
+az login
+az extension add -n azure-cli-ml
+az ad sp create-for-rbac --sdk-auth --name ml-auth
+az ad sp show --id 9b353f1e-4706-49fb-99a7-9289eefd4aa4 (retrieve objectId using clientId)
+az ml workspace share -w sbirk-aml-ws -g sbirk-aml-rg --user c61584c0-7bd5-40a7-a19f-e4ad752dcb79 --role owner (allow the SP access to the workspace)
