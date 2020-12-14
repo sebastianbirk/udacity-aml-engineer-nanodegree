@@ -94,5 +94,9 @@ A screencast showing the entire process of the working ML application has been c
 The screencast containing the project results has been recorded using the Screencast-O-Matic tool and has been uploaded to YouTube: https://www.youtube.com/watch?v=hBo26CPtdIE.
 
 ## Improvement Suggestions
-- Dataset: The dataset can directly point to the URI instead of making use of a local file upload so that when the data gets updated, automatically the new data will be used within the pipeline run.
+- Dataset: The registered dataset can directly point to the URI instead of making use of a local file upload so that when the data gets updated, automatically the new data will be used within the pipeline run.
 - Automation: In general, some steps have been completed manually using the AML studio (GUI) such as model deployment of the best model. This can be automated in code and executed by a DevOps pipeline in the future.
+- Model: An even better model could be developed by making use of feature engineering or hyperparameter tuning using Hyperdrive.
+- Model endpoint: The model endpoint could be benchmarked with the Apache Benchmark command-line tool to ensure the right compute setup.
+- Swagger Documentation: The swagger UI could be hosted on a web server instead of on localhost so that other people have access to the model documentation.
+- Pipeline: The pipeline could be scheduled to run on a regular basis or execute in a trigger-based manner (e.g. when dataset is updated).
