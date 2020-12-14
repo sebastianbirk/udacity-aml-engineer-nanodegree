@@ -2,7 +2,7 @@
 
 In this project, Azure Machine Learning is used to build and operationalize a classification model that 
 utilizes the UCI Bank Marketing dataset (https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) to predict if a bank client will subscribe to a term deposit with the bank. The focus in this project will be on the operationalization of the best model that
-results from an AutoMl training run. Operationalization will cover different aspects suchs as model deployment, model monitoring & logging, Swagger documentation of the model endpoint, consumption of the
+results from an AutoMl training run. Operationalization will cover different aspects such as model deployment, model monitoring & logging, Swagger documentation of the model endpoint, consumption of the
 model endpoint as well as creating, publishing and consuming an AML pipeline.
 
 ## Architectural Diagram
@@ -19,6 +19,7 @@ Creation of Service Principal ml-auth:
 Service Principal ml-auth has been granted access to the workspace:
 ![service_principal_access](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/service_principal_access.png)
 
+
 **Step 2: Automated ML Experiment**
 
 The dataset has been downloaded from https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv and registered as a dataset in the Azure Machine Learning workspace with the appropriate configurations. 
@@ -34,23 +35,40 @@ Completed experiment:
 Best model:
 ![best_model](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/best_model.png)
 
+
 **Step 3: Deploying the Best Model**
 
+The best model has been selected for deployment using Azure Container Instance (ACI). Authentication has been enabled. This has been completed using the Azure Machine Learning studio (the GUI).
 
 
-Step 4: Enabling Logging
+**Step 4: Enabling Logging**
+
+Application Insights has been enabled for the deployed model using the Python SDK and logs have been retrieved by running the logs.py script.
+
+Enabling Application Insights:
+![application_insights_enabled](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/application_insights_enabled.png)
+
+Retrieving Application Insights Logs:
+![application_insights_logs](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/application_insights_logs.png)
 
 
+**Step 5: Swagger Documentation**
 
-Step 5: Swagger Documentation
+The Swagger JSON file has been downloaded from the deployed model and copied to the swagger directory. The swagger.sh script has been run to download the latest Swagger container and run it on port 9080. Finally, the serve.py script has been run to start a Python server on port 9000 to serve the Swagger JSON file.
+
+Swagger running on localhost showing the HTTP API methods and responses for the model:
+![swagger_ui](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/swagger_ui.png)
 
 
+**Step 6: Consuming Model Endpoints**
 
-Step 6: Consuming Model Endpoints
+The endpoint.py script has been run to interact with the trained model. For this the scoring_uri and key have been modified to match the deployed service.
+
+Running the endpoint.py script against the API producing JSON output from the model:
+![consume_endpoint](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/consume_endpoint.png)
 
 
-
-Step 7: Creating and Publishing a Pipeline
+**Step 7: Creating and Publishing a Pipeline**
 
 
 
