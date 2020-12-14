@@ -70,13 +70,29 @@ Running the endpoint.py script against the API producing JSON output from the mo
 
 **Step 7: Creating and Publishing a Pipeline**
 
+The pipeline_with_automl_step.ipynb notebook has been adjusted and run to create, publish and consume a pipeline. This notebook covers
+
+AML studio pipeline section showing the pipeline endpoint:
+![pipeline_endpoints](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/pipeline_endpoints.png)
+
+The bankmarketing dataset with the AutoML module:
+![pipeline_run](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/pipeline_run.png)
+
+The "Published Pipeline overview", showing a REST endpoint and a status of ACTIVE:
+
+The "Use RunDetails Widgets" in the Jupyter Notebook showing the step runs:
+![run_details_widget](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/run_details_widget.png)
+
+A completed pipeline run:
+![pipeline_runs](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/pipeline_runs.png)
 
 
-Step 8: Documentation
-
+**Step 8: Documentation**
+A screencast showing the entire process of the working ML application has been created. The link can be found in the next section. In addition, this README has been created which contains an overview of the project, an architectural diagram, a short description of the project main steps as well as a short section on how to improve the project in the future.
 
 ## Screen Recording
-A screencast containing the project results has been recorded using the Screencast-O-Matic tool and has been uploaded to YouTube: https://www.youtube.com/watch?v=hBo26CPtdIE.
+The screencast containing the project results has been recorded using the Screencast-O-Matic tool and has been uploaded to YouTube: https://www.youtube.com/watch?v=hBo26CPtdIE.
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+## Improvement Suggestions
+- Dataset: The dataset can directly point to the URI instead of making use of a local file upload so that when the data gets updated, automatically the new data will be used within the pipeline run.
+- Automation: In general, some steps have been completed manually using the AML studio (GUI) such as model deployment of the best model. This can be automated in code and executed by a DevOps pipeline in the future.
