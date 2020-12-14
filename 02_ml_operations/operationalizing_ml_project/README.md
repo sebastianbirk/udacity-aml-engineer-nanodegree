@@ -13,6 +13,10 @@ Step 1: Authentication
 Using the Azure Cloud Shell and the Azure Machine Learning CLI Extension, a Service Principal Account has been created and granted the owner role to the Azure Machine Learning workspace. The necessary commands
 are documented in the service_principal_setup_instructions.txt file.
 
+![service_principal_creation](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/service_principal_creation.png)
+
+![service_principal_access](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/service_principal_access.png)
+
 Step 2: Automated ML Experiment
 
 Step 3: Deploying the Best Model
