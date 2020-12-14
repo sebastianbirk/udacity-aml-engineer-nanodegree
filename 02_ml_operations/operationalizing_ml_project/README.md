@@ -10,8 +10,8 @@ model endpoint as well as creating, publishing and consuming an AML pipeline.
 
 ## Key Steps
 Step 1: Authentication
-Using the Azure Cloud Shell and the Azure Machine Learning CLI Extension, a Service Principal Account has been created and granted the owner role to the Azure Machine Learning workspace. The necessary commands
-are documented in the service_principal_setup_instructions.txt file.
+
+Using the Azure Cloud Shell and the Azure Machine Learning CLI Extension, a Service Principal Account has been created and granted the owner role to the Azure Machine Learning workspace. The necessary commands are documented in the service_principal_setup_instructions.txt file.
 
 ![service_principal_creation](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/service_principal_creation.png)
 
@@ -19,17 +19,35 @@ are documented in the service_principal_setup_instructions.txt file.
 
 Step 2: Automated ML Experiment
 
+![registered_dataset](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/registered_dataset.png)
+
+![automl_run](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/automl_run.png)
+
+![best_model](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/operationalizing_ml_project/screenshots/best_model.png)
+
 Step 3: Deploying the Best Model
+
+
 
 Step 4: Enabling Logging
 
+
+
 Step 5: Swagger Documentation
+
+
 
 Step 6: Consuming Model Endpoints
 
+
+
 Step 7: Creating and Publishing a Pipeline
 
+
+
 Step 8: Documentation
+
+
 ## Screen Recording
 A screencast containing the project results has been recorded using the Screencast-O-Matic tool and has been uploaded to YouTube: https://www.youtube.com/watch?v=hBo26CPtdIE.
 
