@@ -86,6 +86,7 @@ A completed pipeline run:
 
 
 **Step 8: Documentation**
+
 A screencast showing the entire process of the working ML application has been created. The link can be found in the next section. In addition, this README has been created which contains an overview of the project, an architectural diagram, a short description of the project main steps as well as a short section on how to improve the project in the future.
 
 ## Screen Recording
