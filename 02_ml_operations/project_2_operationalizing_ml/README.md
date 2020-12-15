@@ -70,15 +70,13 @@ Running the endpoint.py script against the API producing JSON output from the mo
 
 **Step 7: Creating and Publishing a Pipeline**
 
-The pipeline_with_automl_step.ipynb notebook has been adjusted and run to create, publish and consume a pipeline. This notebook covers
+The pipeline_with_automl_step.ipynb notebook has been adjusted and run to create, publish and consume a pipeline.
 
-AML studio pipeline section showing the pipeline endpoint:
+AML studio pipeline section showing the pipeline REST endpoint with a status of ACTIVE:
 ![pipeline_endpoints](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/pipeline_endpoints.png)
 
 The bankmarketing dataset with the AutoML module:
 ![pipeline_run](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/pipeline_run.png)
-
-The "Published Pipeline overview", showing a REST endpoint and a status of ACTIVE:
 
 The "Use RunDetails Widgets" in the Jupyter Notebook showing the step runs:
 ![run_details_widget](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/run_details_widget.png)
