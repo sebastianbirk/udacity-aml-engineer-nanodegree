@@ -36,7 +36,7 @@ Best model:
 ![best_model](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/best_model.png)
 
 
-**Step 3: Deploying the Best Model**
+**Step 3: Model Deployment**
 
 The best model has been selected for deployment using Azure Container Instance (ACI). Authentication has been enabled. This has been completed using the Azure Machine Learning studio (the GUI).
 
@@ -60,7 +60,7 @@ Swagger running on localhost showing the HTTP API methods and responses for the 
 ![swagger_ui](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/02_ml_operations/project_2_operationalizing_ml/screenshots/swagger_ui.png)
 
 
-**Step 6: Consuming Model Endpoints**
+**Step 6: Consuming Model Endpoint**
 
 The endpoint.py script has been run to interact with the trained model. For this the scoring_uri and key have been modified to match the deployed service.
 
