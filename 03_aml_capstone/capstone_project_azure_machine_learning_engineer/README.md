@@ -8,7 +8,7 @@ models and tune their hyperparameters. The best performing model is deployed to 
 The prerequisites to run/reproduce this project are:
 - Create an Azure Subscription
 - Create an Azure Machine Learning Workspace
-- Create of an Azure Machine Learning Compute Instance
+- Create an Azure Machine Learning Compute Instance
 - Clone this git repository to the Azure Machine Learning Compute Instance file system
 - Provision the conda development environment as jupyter kernel:
 There are two conda environment files ("*.yml") provided in the "dependencies" folder, one for model development and one for model training. The environment for model development should be provisioned as jupyter kernel in the following way:
