@@ -1,7 +1,7 @@
 # Capstone Project: Azure Machine Learning
 
 In this capstone project of the Azure Machine Learning Engineer Nanodegree, a classification model is built to predict whether employees are at risk of leaving a company, a phenomenon called attrition. The model is trained on the IBM HR Analytics Employee Attrition & Performance dataset from Kaggle (https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset). Both AutoML & Hyperdrive are used to train different
-models and tune their hyperparameters. The best performing model is deployed to Azure Container Instance (ACI) and it is shown how the model endpoint can be interacted with. The chosen evaluation metric is AUC_weighted as the dataset is characterized by imbalance in the class label.
+models and tune their hyperparameters. The best performing model is deployed to Azure Container Instances (ACI) and it is shown how the model endpoint can be interacted with. The chosen evaluation metric is AUC_weighted as the dataset is characterized by imbalance in the class label.
 
 ## Project Set Up and Installation
 
@@ -39,7 +39,7 @@ The AutoML run settings and configuration can be found in "automl.ipynb".
 - Featurization is set to auto to allow AutoML to do automatic featurization
 
 ### Results
-The best AutoML model was a VotingEnsemble with an AUC_weighted of 0.835. Compared to the baseline models and the hyperdrive run this is a very good result, which is why this model was also used for deployment to Azure Container Instance (ACI). The most important parameter n_estimators was set to 10, which means that this is an ensemble of 10 models. Specific hyperparameters and weights can be found in the "automl.ipynb" notebook in the section "Best Model" or in the screenshot below.
+The best AutoML model was a VotingEnsemble with an AUC_weighted of 0.835. Compared to the baseline models and the hyperdrive run this is a very good result, which is why this model was also used for deployment to Azure Container Instances (ACI). The most important parameter n_estimators was set to 10, which means that this is an ensemble of 10 models. Specific hyperparameters and weights can be found in the "automl.ipynb" notebook in the section "Best Model" or in the screenshot below.
 The model could probably be further improved by increasing the experiment timeout and thus allowing AutoML to train more different models.
 
 RunDetails widget:
