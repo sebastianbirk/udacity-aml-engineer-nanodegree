@@ -50,7 +50,12 @@ Best model:
 
 ## Hyperparameter Tuning
 For the Hyperdrive run I have chosen an XGBoost classifier as this algorithm is in general one of the best-performing ones for classification tasks. Also, the AutoML run showed that the XGBoost classifier is quite promising as it had multiple XGBoost models among the top performers. 
-For the specific hyperparameters that I tuned as well as their ranges I have taken https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/#:~:text=XGBoost%20has%20a%20very%20useful,rate%20and%20number%20of%20trees as an inspiration, which is a very detailed guide to hyperparameter tuning for XGBoost models. Some of the tuned hyperparameters were integers while others had continuous ranges. Details can be found in the "hyperparameter_tuning.ipynb" notebook in the section "Hyperdrive Configuration".
+For the specific hyperparameters that I tuned as well as their ranges I have taken https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/#:~:text=XGBoost%20has%20a%20very%20useful,rate%20and%20number%20of%20trees as an inspiration, which is a very detailed guide to hyperparameter tuning for XGBoost models. 
+Some of the tuned hyperparameters were integers while others had continuous ranges. To be more specific, I have tuned the following hyperparameters and have chosen the following ranges as options:
+![hyperparameter_tuning](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/03_aml_capstone/capstone_project_azure_machine_learning_engineer/screenshots/hyperparameter_tuning.png)
+
+
+Details can be found in the "hyperparameter_tuning.ipynb" notebook in the section "Hyperdrive Configuration".
 
 ### Results
 The best trained XGBoost classifier had an AUC_weighted of 0.739, which is quite good compared to the baseline model but falls short of the model that was trained using AutoML. Therefore, this model was not deployed. The specific hyperparameters of the best model can be found in the "hyperparameter_tuning.ipynb" notebook and in the screenshots below.
@@ -64,6 +69,8 @@ Best model:
 
 ## Model Deployment
 As mentioned in above sections, the best AutoML model was also the best model overall and has thus been deployed to Azure Container Instances (ACI). The model deployment is implemented at the bottom of the "automl.ipynb" notebook and it is also demonstrated how the model endpoint can be queried using the Python requests library. A final concatenated dataframe shows the model prediction results next to the actual target and feature variables.
+The model endpoint can be queried in the following way with a sample input:
+![query_model_endpoint](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/03_aml_capstone/capstone_project_azure_machine_learning_engineer/screenshots/query_model_endpoint.png)
 
 Model Endpoint:
 ![model_endpoint](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/03_aml_capstone/capstone_project_azure_machine_learning_engineer/screenshots/model_endpoint.png)
