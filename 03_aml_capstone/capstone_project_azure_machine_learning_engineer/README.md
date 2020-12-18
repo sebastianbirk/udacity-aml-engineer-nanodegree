@@ -12,10 +12,10 @@ The prerequisites to run/reproduce this project are:
 - Clone this git repository to the Azure Machine Learning Compute Instance file system
 - Provision the conda development environment as jupyter kernel:
 There are two conda environment files ("*.yml") provided in the "dependencies" folder, one for model development and one for model training. The environment for model development should be provisioned as jupyter kernel in the following way:
-  1. Run ```conda env create -f dev_environment.yml```in the terminal to create a conda environment from the dev_environment.yml file. The name of the conda environment will be    attrition_dev. 
-  2. Activate your conda environment with ```conda activate attrition_dev```.
-  3. Provision the environment as a jupyter kernel using ```python -m ipykernel install --user --name=attrition_dev```.
-  4. Select the attrition_dev kernel inside the jupyter notebook when running the notebooks.
+  - Run ```conda env create -f dev_environment.yml```in the terminal to create a conda environment from the dev_environment.yml file. The name of the conda environment will be     attrition_dev. 
+  - Activate your conda environment with ```conda activate attrition_dev```.
+  - Provision the environment as a jupyter kernel using ```python -m ipykernel install --user --name=attrition_dev```.
+  - Select the attrition_dev kernel inside the jupyter notebook when running the notebooks.
 - Run the "explorative_data_analysis.ipynb" notebook to register the data as a tabular dataset in the Azure Machine Learning Workspace
 
 ## Dataset
