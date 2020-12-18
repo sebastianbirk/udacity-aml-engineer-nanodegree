@@ -3,7 +3,7 @@
 In this capstone project of the Azure Machine Learning Engineer Nanodegree, a classification model is built to predict whether employees are at risk of leaving a company, a phenomenon called attrition. The model is trained on the IBM HR Analytics Employee Attrition & Performance dataset from Kaggle (https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset). Both AutoML & Hyperdrive are used to train different
 models and tune their hyperparameters. The best performing model is deployed to Azure Container Instances (ACI) and it is shown how the model endpoint can be interacted with. The chosen evaluation metric is AUC_weighted as the dataset is characterized by imbalance in the class label.
 
-## Project Set Up and Installation
+## Project Setup and Installation
 
 The prerequisites to run/reproduce this project are:
 - Create an Azure Subscription
