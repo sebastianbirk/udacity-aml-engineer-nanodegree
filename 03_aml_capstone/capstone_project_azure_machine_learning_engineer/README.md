@@ -30,7 +30,7 @@ The dataset is used for the binary classification task of predicting whether an 
 The data has been downloaded from Kaggle and added to the github repository as it is a static dataset of small size. The "explorative_data_analysis.ipynb" notebook registers the data in the Azure Machine Learning workspace from where it can be accessed with ease using the Dataset class from the Azure Machine Learning SDK.
 
 ## Automated ML
-The AutoML run settings and configuration can be found in "automl.ipynb". 
+The AutoML run settings and configuration can be found in the "automl.ipynb" notebook. 
 - Early stopping is enabled to save resources and stop non-promising training runs early.
 - The experiment timeout is set to 90min, which I believe is enough time to train a well-performing model while considering resource constraints.
 - The maximum concurrent iterations are set to 4 since the compute cluster that is used has 5 nodes, and this number should be smaller than the compute cluster nodes.
