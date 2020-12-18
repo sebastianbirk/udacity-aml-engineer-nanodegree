@@ -53,7 +53,7 @@ For the Hyperdrive run I have chosen an XGBoost classifier as this algorithm is 
 For the specific hyperparameters that I tuned as well as their ranges I have taken https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/#:~:text=XGBoost%20has%20a%20very%20useful,rate%20and%20number%20of%20trees as an inspiration, which is a very detailed guide to hyperparameter tuning for XGBoost models. Some of the tuned hyperparameters were integers while others had continuous ranges. Details can be found in the "hyperparameter_tuning.ipynb" notebook in the section "Hyperdrive Configuration".
 
 ### Results
-The best trained XGBoost classifier had an AUC_weighted of 0.739, which is quite good compared to the baseline model but falls short of the model that was trained using AutoML. Therefore, this model was not deployed. The specific hyperparameters of the best model can be found in the "hyperparameter_tuning.ipynb" notebook and in the screenshot below.
+The best trained XGBoost classifier had an AUC_weighted of 0.739, which is quite good compared to the baseline model but falls short of the model that was trained using AutoML. Therefore, this model was not deployed. The specific hyperparameters of the best model can be found in the "hyperparameter_tuning.ipynb" notebook and in the screenshots below.
 I think the model could have been further improved by doing feature engineering, for example with the boruta_py library.
 
 RunDetails widget:
