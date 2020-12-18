@@ -39,7 +39,7 @@ The AutoML run settings and configuration can be found in the "automl.ipynb" not
 - Featurization is set to auto to allow AutoML to do automatic featurization.
 
 ### Results
-The best AutoML model was a VotingEnsemble with an AUC_weighted of 0.835. Compared to the baseline models and the hyperdrive run this is a very good result, which is why this model was also used for deployment to Azure Container Instances (ACI). The most important parameter n_estimators was set to 10, which means that this is an ensemble of 10 models. Specific hyperparameters and weights can be found in the "automl.ipynb" notebook in the section "Best Model" or in the screenshot below.
+The best AutoML model was a VotingEnsemble with an AUC_weighted of 0.835. Compared to the baseline models and the hyperdrive run this is a very good result, which is why this model was also used for deployment to Azure Container Instances (ACI). The most important parameter n_estimators was set to 10, which means that this is an ensemble of 10 models. Specific hyperparameters and weights can be found in the "automl.ipynb" notebook in the section "Best Model" or in the screenshots below.
 The model could probably be further improved by increasing the experiment timeout and thus allowing AutoML to train more different models.
 
 RunDetails widget:
