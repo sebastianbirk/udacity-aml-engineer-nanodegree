@@ -36,7 +36,7 @@ The AutoML run settings and configuration can be found in the "automl.ipynb" not
 - The maximum concurrent iterations are set to 4 since the compute cluster that is used has 5 nodes, and this number should be smaller than the compute cluster nodes.
 - I used AUC_weighted as evaluation metric as the prediction target "Attrition" shows a class imbalance. Using accuracy is therefore inappropriate.
 - I used 20% of the training data as validation set. I did this consistently through all model training attempts (including the baseline models, the automl models and the hyperdrive models) to ensure fair comparability.
-- Featurization is set to auto to allow AutoML to do automatic featurization
+- Featurization is set to auto to allow AutoML to do automatic featurization.
 
 ### Results
 The best AutoML model was a VotingEnsemble with an AUC_weighted of 0.835. Compared to the baseline models and the hyperdrive run this is a very good result, which is why this model was also used for deployment to Azure Container Instances (ACI). The most important parameter n_estimators was set to 10, which means that this is an ensemble of 10 models. Specific hyperparameters and weights can be found in the "automl.ipynb" notebook in the section "Best Model" or in the screenshot below.
