@@ -92,9 +92,9 @@ def main():
     auc_weighted = np.round(roc_auc_score(y_val, clf.predict(X_val), average='weighted'), 3)
     run.log("AUC_weighted", np.float(auc_weighted))
     
-    os.makedirs('outputs', exist_ok=True)
+    os.makedirs("outputs", exist_ok=True)
     # files saved in the "outputs" folder are automatically uploaded into run history
-    joblib.dump(clf, 'outputs/hyperdrive_model.pkl')
+    joblib.dump(clf, "outputs/hyperdrive_model.pkl")
 
 if __name__ == '__main__':
     main()
