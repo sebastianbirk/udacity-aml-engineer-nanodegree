@@ -49,7 +49,7 @@ Best model:
 ![best_automl_model](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/03_aml_capstone/capstone_project_azure_machine_learning_engineer/screenshots/best_automl_model.png)
 
 ## Hyperparameter Tuning
-For the Hyperdrive run I have chosen an XGBoost classifier as this algorithm is in general on of the best-performing ones for classification tasks. Also, the AutoML run showed that the XGBoost classifier is quite promising as it had multiple XGBoost models among the top performers. 
+For the Hyperdrive run I have chosen an XGBoost classifier as this algorithm is in general one of the best-performing ones for classification tasks. Also, the AutoML run showed that the XGBoost classifier is quite promising as it had multiple XGBoost models among the top performers. 
 For the specific hyperparameters that I tuned as well as their ranges I have taken https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/#:~:text=XGBoost%20has%20a%20very%20useful,rate%20and%20number%20of%20trees as an inspiration, which is a very detailed guide to hyperparameter tuning for XGBoost models. Some of the tuned hyperparameters were integers while others had continuous ranges. Details can be found in the "hyperparameter_tuning.ipynb" notebook in the section "Hyperdrive Configuration".
 
 ### Results
