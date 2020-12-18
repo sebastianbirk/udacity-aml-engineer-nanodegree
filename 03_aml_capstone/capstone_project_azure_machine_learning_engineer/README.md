@@ -69,6 +69,8 @@ Best model:
 
 ## Model Deployment
 As mentioned in above sections, the best AutoML model was also the best model overall and has thus been deployed to Azure Container Instances (ACI). The model deployment is implemented at the bottom of the "automl.ipynb" notebook and it is also demonstrated how the model endpoint can be queried using the Python requests library. A final concatenated dataframe shows the model prediction results next to the actual target and feature variables.
+The model endpoint can be queried in the following way with a sample input:
+![query_model_endpoint](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/03_aml_capstone/capstone_project_azure_machine_learning_engineer/screenshots/query_model_endpoint.png)
 
 Model Endpoint:
 ![model_endpoint](https://github.com/sebastianbirk/udacity-aml-engineer-nanodegree/blob/master/03_aml_capstone/capstone_project_azure_machine_learning_engineer/screenshots/model_endpoint.png)
